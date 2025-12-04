@@ -7,6 +7,32 @@
     <h1>Welcome To Website</h1>
     <h2>ไงนี่คือเว็บไซต์ของผม</h2>
     <a href="about.html">ไปดูหน้า about.html</a>
+    <a href="login.html">หน้า Login / Log in ได้จริงหรือเปล่าผมยังไม่รู้เลย5555</a>
+    <a href="signup.html">Sign Up นะคับ5555</a>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>แสดงชื่อผู้ใช้ที่ล็อกอิน</title>
+</head>
+<body>
+    <h2>สวัสดี, <span id="username">ผู้ใช้</span>!</h2>
+
+    <script>
+        // สมมติว่าชื่อผู้ใช้ถูกเก็บตอนล็อกอิน
+        // ตัวอย่าง: localStorage.setItem('username', 'Bobby');
+
+        // ดึงชื่อผู้ใช้จาก localStorage
+        const username = localStorage.getItem('username');
+
+        // แสดงชื่อผู้ใช้ ถ้าไม่มี ก็ขึ้นข้อความว่า "ผู้ใช้"
+        if(username) {
+            document.getElementById('username').textContent = username;
+        }
+    </script>
+</body>
+</html>
+
+
 </head>
 <body>
 
